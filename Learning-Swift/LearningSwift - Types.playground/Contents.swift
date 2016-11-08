@@ -59,6 +59,9 @@ var dob : Int = 14
 //Remove the next comment and see the error
 //dob = "Hello My date of birth is "
 
+var id = "A67"
+id = 89
+
 //Type Inference
 
 var score = 14
