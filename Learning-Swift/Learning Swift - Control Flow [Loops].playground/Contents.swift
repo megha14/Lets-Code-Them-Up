@@ -10,7 +10,7 @@
  }
  */
 
-//Square of numbers between 1 and 10
+//Square of numbers between 1 and 5
 
 for number in 1...5 {
     print("Square of \(number) is \(number*number)")
@@ -70,4 +70,5 @@ repeat{
 }while(decimalNumber != 0)
 
 print("Binary representation is \(binary)")
+
 
