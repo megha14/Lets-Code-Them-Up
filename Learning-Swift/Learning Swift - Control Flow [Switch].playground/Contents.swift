@@ -41,7 +41,7 @@ default:
 }
 
 
-//Counting vowels in a sentance
+//Counting vowels and spaces in a sentance
 var sentence = "I am learning swift"
 var countVowels = 0
 var countSpaces = 0
