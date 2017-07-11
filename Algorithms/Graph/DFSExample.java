@@ -43,7 +43,7 @@ public class DFSExample{
         }
 	}
 
-	/**
+    /**
     * Create and get node corresponding to a vertex.
     * @param HashMap<String, Node> graph 
     * @param id 
@@ -76,7 +76,7 @@ public class DFSExample{
 		s.addAdjacent(d);
 	}
 
-	/**
+    /**
     * Creates a HashMap with string key and Node value
     * @param input list of edges
     * @return HashMap<String,Node>
@@ -92,7 +92,7 @@ public class DFSExample{
 		return graph;
 	}
 
-	/**
+    /**
     * Helper method for pathExists recursive method
     * @param HashMap<String, Node> graph 
     * @param source start index
@@ -104,7 +104,7 @@ public class DFSExample{
 		return pathExists(getNode(graph, source), getNode(graph, destination), visited);
 	}
 
-	/**
+    /**
     * pathExists recursive method to find path between source and destination
     * @param source start index
     * @param destinations end index
@@ -131,7 +131,7 @@ public class DFSExample{
 		return false;
 	}
 
-	/**
+    /**
     * Print HashMap
     * @param HashMap<String, Node> graph 
     * @return no return value
