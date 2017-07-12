@@ -138,7 +138,7 @@ public class DFSExample{
     */ 
 	public static void printGraph(HashMap<String,Node> graph){
 		HashSet<String> key = new HashSet<String>(graph.keySet());
-		for(Object e: key)
+		for(String e: key)
 			System.out.println(graph.get(e));
 	}
 	
