@@ -106,8 +106,8 @@ public class DFSExample{
 
     /**
     * pathExists recursive method to find path between source and destination
-    * @param source start index
-    * @param destinations end index
+    * @param source start node
+    * @param destinations end node
     * @param visited set to store visited nodes
     * @return true or false
     */ 
