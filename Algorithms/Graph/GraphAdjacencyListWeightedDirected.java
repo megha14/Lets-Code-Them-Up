@@ -14,7 +14,7 @@ public class GraphAdjacencyListWeightedDirected{
 	}
 
 	/**
-	* Edge --- class to store an edge between End vertex and weight of the edge
+	* Edge --- class to store an edge with End vertex and Weight of the edge
 	*/
 	static class Edge{		
 		
@@ -26,12 +26,12 @@ public class GraphAdjacencyListWeightedDirected{
 			this.weight = weight;
 		}
 		
-		//Getter method for start vertex
+		//Getter method for end vertex
 		public int getEndVertex(){
 			return endVertex;
 		}
 		
-		//Getter method for end vertex
+		//Getter method for weight of the edge 
 		public int getWeight(){
 			return weight;
 		}
@@ -39,7 +39,7 @@ public class GraphAdjacencyListWeightedDirected{
 	}
 
 	/**
-	* Node --- class to store each vertex along with adjacent vertices and weight of the edges.
+	* Node --- class to store each vertex along with adjacent vertices.
 	*/
 	static class Node{		
 		
@@ -56,26 +56,26 @@ public class GraphAdjacencyListWeightedDirected{
 			return id;
 		}
 		
-		//Getter method for end vertex
+		//Getter method for adjacent vertices
 		public ArrayList<Edge> getAdjacent(){
 			return adjacent;
 		}
 		
-		//add node to the adajcent list
+		//add edge to the adajcent list
 		public void addAdjacent(int endVertex, int weight){
 			adjacent.add(new Edge(endVertex,weight));
 		}
 
 		//To print Node 
-        public String toString(){
-     		String msg = "";
-        	for(Edge node: adjacent)
-        		msg = msg + node.getEndVertex() + " ";
-        	return msg;
-        }
+        	public String toString(){
+			String msg = "";
+			for(Edge node: adjacent)
+				msg = msg + node.getEndVertex() + " ";
+			return msg;
+        	}
 	}
 
-	/**
+    /**
     * Create and get node corresponding to a vertex.
     * @param id 
     * @return Node object.
@@ -92,8 +92,8 @@ public class GraphAdjacencyListWeightedDirected{
 
     /**
     * Adds edge between sorce and destination.
-    * @param source start index
-    * @param destinations end index
+    * @param source index
+    * @param destinations index
     * @param weight of the edge
     * @return No return value.
     */ 
@@ -109,7 +109,7 @@ public class GraphAdjacencyListWeightedDirected{
     /**
     * Finds all adjacent vertices of the given vertex
     * @param vertex input vertex
-    * @return ArrayList<Node> storing adjacent vertices of vertex
+    * @return ArrayList<Edge> storing adjacent vertices of vertex
     */ 
 	public ArrayList<Edge> findAdjacent(int index){
 		Node node = getNode(index);
@@ -118,8 +118,8 @@ public class GraphAdjacencyListWeightedDirected{
 	
     /**
     * Finds whether vertices start and end are connected 
-    * @param source start index
-    * @param destination end index
+    * @param source index
+    * @param destination index
     * @return true if start and end are part of same edge else returns false.
     */
 	public boolean isConnected(int source, int destination){
