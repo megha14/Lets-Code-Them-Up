@@ -24,3 +24,6 @@ Program to represent WEIGHTED UNDIRECTED graph as Adjacency List
 
 # 9. GraphAdjacencyListWeightedDirected 
 Program to represent WEIGHTED DIRECTED graph as Adjacency List
+
+# 10. DFSExample 
+Program to find whether path exists between source node and destination node using DFS 
