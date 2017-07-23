@@ -24,7 +24,7 @@ public class GraphAdjacencyMatrixWeighted{
     * Adds edge between sorce and destination.
     * @param source start index
     * @param destinations end index
-    	* @param weight weight of edge
+    * @param weight weight of edge
     * @return No return value.
     */ 
 	public void add(int source, int destination, int weight){
