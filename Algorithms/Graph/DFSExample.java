@@ -24,7 +24,7 @@ public class DFSExample{
 			return id;
 		}
 		
-		//Getter method for end vertex
+		//Getter method for adjacent list
 		public LinkedList<Node> getAdjacent(){
 			return adjacent;
 		}
@@ -35,12 +35,12 @@ public class DFSExample{
 		}
 
 		//To print Node 
-        public String toString(){
-     		String msg = id + " : ";
-        	for(Node node: adjacent)
-        		msg = msg + node.id + " ";
-        	return msg;
-        }
+        	public String toString(){
+			String msg = id + " : ";
+			for(Node node: adjacent)
+				msg = msg + node.id + " ";
+			return msg;
+        	}
 	}
 
     /**
@@ -57,7 +57,7 @@ public class DFSExample{
         	graph.put(id, node);
         	return node;
         }
-	}
+    }
 
     /**
     * Adds edge between sorce and destination.
@@ -113,17 +113,17 @@ public class DFSExample{
     */ 
 	public static boolean pathExists(Node source, Node destination, HashSet<Node> visited){
 		//return false if visited contains source
-    if(visited.contains(source))
+    		if(visited.contains(source))
 			return false;
 
-    //add source to visited
+    		//add source to visited
 		visited.add(source);
 
-    //return true if source and destination are same
+    		//return true if source and destination are same
 		if(source == destination)
 			return true;
     
-    //call DFS on each node present in the adjacent of source
+    		//call DFS on each node present in the adjacent of source
 		for(Node neighbor : source.getAdjacent()){
 			if(pathExists(neighbor, destination, visited))
 				return true;
