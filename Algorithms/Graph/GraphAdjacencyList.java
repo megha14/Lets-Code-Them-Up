@@ -31,7 +31,7 @@ public class GraphAdjacencyList{
 			return id;
 		}
 		
-		//Getter method for end vertex
+		//Getter method for adjacent list
 		public ArrayList<Node> getAdjacent(){
 			return adjacent;
 		}
@@ -42,15 +42,15 @@ public class GraphAdjacencyList{
 		}
 
 		//To print Node 
-        public String toString(){
-     		String msg = "";
-        	for(Node node: adjacent)
-        		msg = msg + node.id + " ";
-        	return msg;
-        }
+        	public String toString(){
+			String msg = "";
+			for(Node node: adjacent)
+				msg = msg + node.id + " ";
+			return msg;
+        	}
 	}
 
-	/**
+    /**
     * Create and get node corresponding to a vertex.
     * @param id 
     * @return Node object.
@@ -63,7 +63,7 @@ public class GraphAdjacencyList{
         	graph.put(id, node);
         	return node;
         }
-	}
+    }
 
     /**
     * Adds edge between sorce and destination.
