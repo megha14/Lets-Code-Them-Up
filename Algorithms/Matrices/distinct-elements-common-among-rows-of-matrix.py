@@ -53,19 +53,23 @@ common_elements -
 
 # *** Solution ***
 def common_elements(matrix): 
+  # declare dictionary and result array
   keys = {} 
   results = [] 
   
+  #initialize dictionary with null list values
   for i in range(0, len(matrix)): 
     for j in range(0, len(matrix[i])): 
       if matrix[i][j] not in keys: 
         keys[matrix[i][j]] = []
-        
+  
+  # update matrix[row][col] array with values
   for i in range(0, len(matrix)): 
     for j in range(0, len(matrix[i])): 
       if i not in keys[matrix[i][j]]:
         keys[matrix[i][j]].append(i)
-  #print(keys)      
+  
+  # if length of value of key is equal to matrix length add it to result
   for key in keys: 
       if len(keys[key]) == len(matrix):
         results.append(key)
