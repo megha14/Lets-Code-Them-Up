@@ -1,4 +1,4 @@
-class Solution {
+class TwoSumOptimized {
     public int[] twoSum(int[] nums, int target) {
         
         //Hashmap to store the nums[i] and i, where 0<i<nums.length
