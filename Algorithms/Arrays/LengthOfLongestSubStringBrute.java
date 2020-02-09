@@ -10,8 +10,8 @@ class LengthOfLongestSubStringBrute {
         //Initialize the length of result substring with zero
         int ans = 0;
         
-        //Loop i from 0 to length of substring and
-        //loop j from i+1 to length of substring 
+        //Loop i from 0 to length of string and
+        //loop j from i+1 to length of string 
         //to get each and every substring 
         for(int i = 0; i < s.length(); i++){
             for(int j = i+1; j <= s.length(); j++){
