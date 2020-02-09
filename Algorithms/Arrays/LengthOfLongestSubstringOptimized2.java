@@ -1,3 +1,8 @@
+/* 
+Time Complexity - O(n)
+Space Complexity - O(n)
+*/
+
 class LengthOfLongestSubstringOptimized2 {
     
     public int lengthOfLongestSubstring(String s) {
