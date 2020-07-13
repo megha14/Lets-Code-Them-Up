@@ -13,4 +13,8 @@
 6. [TwoSumOptimized.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/TwoSumOptimized.java)
 
 7. [LastStoneWeight.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/LastStoneWeight.java)
+
+8. [CountElements.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/CountElements.java)
+
+9. [SingleNumber.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/SingleNumber.java)
    
