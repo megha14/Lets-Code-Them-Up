@@ -11,4 +11,6 @@
 5. [TwoSum.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/TwoSum.java) - Find the pair wih given sum in an array.
 
 6. [TwoSumOptimized.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/TwoSumOptimized.java)
+
+7. [LastStoneWeight.java](https://github.com/megha14/Lets-Code-Them-Up/blob/master/Algorithms/Arrays/LastStoneWeight.java)
    
