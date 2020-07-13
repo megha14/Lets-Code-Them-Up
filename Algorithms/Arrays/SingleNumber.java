@@ -1,5 +1,5 @@
 /**
- * MaxSubArray.java
+ * SingleNumber.java
  * Purpose: Find maximum sum contiguous subarray 
  *
  * @author Megha Rastogi
@@ -8,7 +8,7 @@
 class SingleNumber {
 
     /**
-     * Find maximum sum contiguous subarray 
+     * Find unique number in array of duplicates 
      *
      * @param Array, nums
      * @return integer, ans
