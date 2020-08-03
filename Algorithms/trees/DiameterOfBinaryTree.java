@@ -39,12 +39,20 @@ class DiameterOfBinaryTree {
      * @return integer, diameter
      */
     public int depth(TreeNode root){
+        // return 0 when reaching leaf nodes
         if(root == null)
             return 0;
         
+        // left node depth
         int left = depth(root.left);
+     
+        // right node depth
         int right = depth(root.right);
+     
+        // update diameter with the max diameter till now
         ans = Math.max(ans, left+right+1);
+     
+        //return depth till this node
         return Math.max(left, right)+1;
     }
 }
